@@ -45,3 +45,13 @@ chmod +x /usr/local/bin/fzf
 
 #set zsh as default shell
 chsh -s $(which zsh) $username
+
+#setup tmux
+#download tmux plugin manager
+#create .config/tmux/plugins directory
+mkdir -p /home/$username/.config/tmux/plugins
+
+git clone https://github.com/tmux-plugins/tpm /home/$username/.config/tmux/plugins/tpm
+
+#copy tmux.conf to .config/tmux
+cp ./dotfiles/.config/tmux/tmux.conf /home/$username/.config/tmux/tmux.conf
