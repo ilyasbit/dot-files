@@ -1,0 +1,56 @@
+live_config_reload = true
+[window]
+padding = { x = 5, y = 3 }
+opacity = 0.9
+dynamic_title = true
+decorations_theme_variant = "dark"
+decorations = "Transparent"
+[font]
+normal = { family = "UbuntuMono Nerd Font", style = "Regular" }
+bold = { family = "UbuntuMono Nerd Font", style = "Bold" }
+italic = { family = "UbuntuMono Nerd Font", style = "Italic" }
+bold_italic = { family = "UbuntuMono Nerd Font", style = "Bold Italic" }
+
+size = 16.0
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+
+[cursor]
+blink_interval = 500
+style = { shape = "Beam", blinking = "Always" }
+
+[colors.primary]
+background = "0x181818"
+foreground = "0xd8d8d8"
+
+[colors.cursor]
+text = "0xd8d8d8"
+cursor = "0xd8d8d8"
+
+[colors.normal]
+black = "0x181818"
+red = "0xab4642"
+green = "0xa1b56c"
+yellow = "0xf7ca88"
+blue = "0x7cafc2"
+magenta = "0xba8baf"
+cyan = "0x86c1b9"
+white = "0xd8d8d8"
+
+[colors.bright]
+black = "0x585858"
+red = "0xab4642"
+green = "0xa1b56c"
+yellow = "0xf7ca88"
+blue = "0x7cafc2"
+magenta = "0xba8baf"
+cyan = "0x86c1b9"
+white = "0xf8f8f8"
+
+[bell]
+animation = "EaseOutExpo"
+color = '0xffffff'
+duration = 0

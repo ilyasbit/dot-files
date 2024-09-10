@@ -1,0 +1,8 @@
+terminal emulator: allacritty
+shell: zsh
+terminal multiplexer: tmux
+shell prompt: starship
+editor: vscode
+terminal tools:
+- fzf
+- ripgrep
