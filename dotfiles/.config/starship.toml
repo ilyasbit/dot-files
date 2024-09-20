@@ -3,7 +3,6 @@
 format = """
 $all\
 $fill\
-$memory_usage\
 $cmd_duration $jobs $time\
 $line_break\
 $shell\
@@ -24,7 +23,7 @@ style_root = 'green bold'
 format = '\[[$user]($style)@'
 
 [memory_usage]
-disabled = false
+disabled = true
 threshold = -1
 symbol = " "
 format = '$symbol[${ram}]($style) '

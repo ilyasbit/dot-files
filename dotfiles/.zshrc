@@ -23,9 +23,6 @@ zinit light zsh-users/zsh-autosuggestions
 # add zsh-completions
 zinit light zsh-users/zsh-completions
 
-# add fzf-tab
-zinit light "Aloxaf/fzf-tab"
-
 #add in snippets
 
 #autoload completion
@@ -48,14 +45,13 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-#fzf integration
-source <(fzf --zsh)
-
 #Completion style
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:*' fzf-preview 'ls --color $realpath'
+
 #aliases
-alias ls='ls --color'
+#alias ls='ls -l1 --color'
 eval "$(starship init zsh)"
+export PATH="$PATH;$HOME/.local/bin/"
+alias ls='exa --long'
